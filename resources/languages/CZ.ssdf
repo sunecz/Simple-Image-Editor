@@ -1,0 +1,519 @@
+{
+	LANG_MARK:	"CZ",
+	LANG_NAME:	"Èeština",
+	LANG_DEFV:	"Nenalezeno",
+	
+	APP_TITLE:		"Jednoduchý obrázkový editor v%{0}",
+	APP_TITLE_FILE:	"Jednoduchý obrázkový editor v%{0} [%{1}]",
+	
+	menus:
+	{
+		file:
+		{
+			MENU_TITLE:	"Soubor",
+		
+			new:	"Nový",
+			open:	"Otevøít",
+			save:	"Uložit",
+			saveAs:	"Uložit jako",
+			exit:	"Ukonèit"
+		},
+		
+		edits:
+		{
+			MENU_TITLE:	"Úpravy",
+			
+			backward:	"Krok zpìt",
+			forward:	"Krok vpøed",
+			config:		"Nastavení"
+		},
+		
+		image:
+		{
+			MENU_TITLE:	"Obraz",
+			
+			resize:			"Zmìnit velikost",
+			flipImageH:		"Pøeklopit horizontálnì",
+			flipImageV:		"Pøeklopit vertikálnì",
+			flipImageLeft:	"Otoèit o 90° doleva",
+			flipImageRight:	"Otoèit o 90° doprava"
+		},
+		
+		filters:
+		{
+			MENU_TITLE: "Filtry"
+		},
+		
+		selection:
+		{
+			MENU_TITLE:	"Výbìr",
+			
+			deselect:	"Odvybrat vše",
+			selectAll:	"Vybrat vše",
+			invert:		"Invertovat výbìr"
+		}
+	},
+	
+	panels:
+	{
+		layers:
+		{
+			tooltips:
+			{
+				layerVisibility: "Viditelnost vrstvy"
+			},
+			
+			menu:
+			{
+				removeLayer:		"Odebrat vrstvu",
+				
+				addLayerMask:		"Pøidat masku vrstvy",
+				removeLayerMask:	"Odebrat masku vrstvy"
+			}
+		}
+	},
+	
+	titles:
+	{
+		error:	"Chyba"
+	},
+	
+	pluginAPI:
+	{
+		cannotLoadPlugin:	"Nelze naèíst plugin %{0}!"
+	},
+	
+	buttons:
+	{
+		addLayer: "Pøidat novou vrstvu"
+	},
+	
+	messages:
+	{
+		startup:
+		{
+			welcomeMessage:	"Vítejte v Jednoduchém editoru obrázkù verze %{0}!"
+		},
+	
+		canvas:
+		{
+			notImageLayer:	"Tuto akci nelze provádìt v neobrázkové vrstvì!"
+		},
+		
+		createNewFile:
+		{
+			emptySizes:		"Nelze vytvoøit obrázek s prázdou šíøkou èi prázdnou výškou!",
+			positiveSizes:	"Velikosti obrázku musí být kladné a nenulové!"
+		},
+		
+		resizeImage:
+		{
+			emptySizes:		"Nelze vytvoøit obrázek s prázdou šíøkou èi prázdnou výškou!",
+			positiveSizes:	"Velikosti obrázku musí být kladné a nenulové!"
+		},
+		
+		configuration:
+		{
+			languageChanged:
+			{
+				title:		"Upozornìní",
+				headerText:	"Jazyk zmìnìn",
+				message:	"Jazyk byl zmìnìn. Tato zmìna se projeví až po restartu programu!"
+			}
+		},
+		
+		largeImage:	"Nejvìtší možná velikost obrázku je %{0}x%{1}!"
+	},
+	
+	windows:
+	{
+		createNewFile:
+		{
+			title:	"Nový",
+		
+			labels:
+			{
+				width:		"Šíøka:",
+				height:		"Výška:",
+				backColor: 	"Barva pozadí:"
+			},
+			
+			buttons:
+			{
+				btnCreate:	"Vytvoøit"
+			}
+		},
+		
+		windowCP:
+		{
+			title:	"Vybrat barvu",
+			
+			labels:
+			{
+				red:		"Èervená:",
+				green:		"Zelená:",
+				blue:		"Modrá:",
+				hue:		"Odstín:",
+				saturation:	"Systost:",
+				lightness:	"Svìtlost:"
+			},
+			
+			buttons:
+			{
+				btnSelect:	"Vybrat"
+			}
+		},
+		
+		windowStartup:
+		{
+			loading:	"Naèítání...",
+			loadingApp:	"Naèítání aplikace...",
+			
+			checkingNewVersion:	"Kontrolování nové verze...",
+			confirmNewVersion:	"Chcete stáhnout nejnovìjší verzi?\n(URL bude otevøena ve vašem internetovém prohlížeèi)",
+			title:				"Nová verze",
+			headerText:			"Nová verze k dispozici!",
+			loadingPlugins:		"Naèítání pluginù..."
+		},
+		
+		windowConfiguration:
+		{
+			title:	"Nastavení",
+			
+			lblLanguage: 		"Jazyk:",
+			chbCheckUpdates:	"Pøi spuštìní kontrolovat aktualizace programu",
+			btnSave:			"Uložit"
+		},
+		
+		windowResize:
+		{
+			title:	"Zmìnit velikost",
+		
+			labels:
+			{
+				width:		"Šíøka:",
+				height:		"Výška:"
+			},
+			
+			buttons:
+			{
+				btnResize:	"Rozšíøit"
+			}
+		}
+	},
+	
+	plugins:
+	{
+		colorAdjustments:
+		{
+			contrast:
+			{
+				title:	"Kontrast",
+			
+				window:
+				{
+					title:		"Kontrast",
+					valueTitle:	"Kontrast"
+				}
+			},
+			
+			brightness:
+			{
+				title:	"Jas",
+			
+				window:
+				{
+					title:		"Jas",
+					valueTitle:	"Jas"
+				}
+			},
+			
+			invert:
+			{
+				title:	"Invertovat",
+			
+				window:
+				{
+					title:		"Invertovat"
+				}
+			},
+			
+			grayscale:
+			{
+				title:	"Barvy šedi",
+			
+				window:
+				{
+					title:		"Barvy šedi"
+				}
+			},
+			
+			hue:
+			{
+				title:	"Odstín barev",
+			
+				window:
+				{
+					title:		"Odstín barev",
+					valueTitle:	"Odstín barev"
+				}
+			},
+			
+			gammaCorrection:
+			{
+				title:	"Gamma korekce",
+				
+				window:
+				{
+					title:		"Gamma korekce",
+					valueTitle: "Gamma"
+				}
+			},
+			
+			lightness:
+			{
+				title:	"Svìtlost",
+				
+				window:
+				{
+					title:		"Svìtlost",
+					valueTitle: "Svìtlost"
+				}
+			},
+			
+			transparency:
+			{
+				title:	"Prùhlednost",
+				
+				window:
+				{
+					title:		"Prùhlednost",
+					valueTitle: "Prùhlednost"
+				}
+			},
+			
+			saturation:
+			{
+				title:	"Sytost barev",
+				
+				window:
+				{
+					title:		"Sytost barev",
+					valueTitle: "Sytost barev"
+				}
+			}
+		},
+		
+		filters:
+		{
+			gaussianBlur:
+			{
+				title: 	"Gaussovo rozostøení",
+				
+				window:
+				{
+					title:		"Gaussovo rozostøení",
+					valueTitle:	"Gaussovo rozostøení"
+				}
+			},
+			
+			boxBlur:
+			{
+				title: 	"Rozostøení",
+				
+				window:
+				{
+					title:		"Rozostøení",
+					valueTitle:	"Rozostøení"
+				}
+			},
+			
+			motionBlur:
+			{
+				title: 	"Smìrové rozostøení",
+				
+				window:
+				{
+					title:		"Smìrové rozostøení",
+					valueTitle:	"Smìrové rozostøení",
+					lblAngle:	"Úhel rozostøení"
+				}
+			},
+			
+			sharpen:
+			{
+				title: 	"Zostøení",
+				
+				window:
+				{
+					title:		"Zostøení",
+					valueTitle:	"Zostøení"
+				}
+			},
+			
+			edgeDetection:
+			{
+				title:	"Detekce hran",
+			
+				window:
+				{
+					title:	"Detekce hran"
+				}
+			},
+			
+			smoothing:
+			{
+				title:	"Vyhlazení",
+			
+				window:
+				{
+					title:	"Vyhlazení"
+				}
+			},
+			
+			unsharpMask:
+			{
+				title:	"Doostøit",
+			
+				window:
+				{
+					title:	"Doostøit"
+				}
+			},
+			
+			pressUp:
+			{
+				title:	"Vytlaèení",
+			
+				window:
+				{
+					title:	"Vytlaèení"
+				}
+			},
+			
+			pressUpAndSmoothing:
+			{
+				title:	"Vytlaèení a vyhlazení",
+			
+				window:
+				{
+					title:	"Vytlaèení a vyhlazení"
+				}
+			},
+			
+			customFilter:
+			{
+				title:	"Vlastní filtr",
+				
+				window:
+				{
+					title:				"Vlastní filtr",
+					valueTitle:			"Opakování",
+					chbAlphaChannel:	"Alfa kanál",
+					lblKernelSize:		"Velikost kernelu:"
+				}
+			}
+		}
+	},
+	
+	general:
+	{
+		texts:
+		{
+			ok:			"OK",
+			preview:	"Náhled",
+			
+			fileOpening:	"Otevírání %{0}...",
+			fileOpened:		"Soubor %{0} otevøen.",
+			fileOpenError:	"Nelze otevøít soubor %{0}!",
+			
+			fileSaving:		"Ukládání %{0}...",
+			fileSaved:		"Soubor %{0} uložen.",
+			fileSaveError:	"Nelze uložit soubor %{0}!",
+			
+			zoom:			"Pøiblížení: %{0}",
+			layerBlendMode:	"Režim prolnutí:"
+		}
+	},
+	
+	layerBlendModes:
+	{
+		NORMAL:			"Normální",
+		LINEAR_DODGE:	"Lineární zesvìtlení",
+		MULTIPLY:		"Násobit",
+		SCREEN:			"Závoj",
+		OVERLAY:		"Pøekrýt",
+		DARKEN:			"Ztmavit",
+		LIGHTEN:		"Zesvìtlit",
+		COLOR_DODGE:	"Zesvìtlit barvy",
+		COLOR_BURN:		"Ztmavit barvy",
+		HARD_LIGHT:		"Tvrdé svìtlo",
+		SOFT_LIGHT:		"Mìkké svìtlo",
+		DIFFERENCE:		"Rozdíl",
+		EXCLUSION:		"Vylouèit"
+	},
+	
+	tools:
+	{
+		TOOL_BRUSH:		"Štìtec",
+		TOOL_MOVE:		"Pozice",
+		TOOL_PENCIL:	"Tužka",
+		TOOL_RESIZE:	"Velikost",
+		TOOL_ROTATE:	"Otoèení",
+		TOOL_RUBBER:	"Guma",
+		TOOL_SELECTION:	"Výbìr",
+		TOOL_VIEW_MOVE:	"Pohyb",
+	
+		color:		"Barva:",
+		size:		"Velikost:",
+		opacity:	"Prùhlednost: %{0}",
+		
+		info:
+		{
+			brush:		"X: %{0}, Y: %{1} (%{2}, HEX: %{3})",
+			move:		"X: %{0}, Y: %{1}",
+			resize:		"X: %{0}, Y: %{1}, šíøka: %{2}, výška: %{3}",
+			rotate:		"Úhel: %{0}° (stupnì)",
+			selection:	"X: %{0}, Y: %{1}, šíøka: %{2}, výška: %{3}"
+		}
+	},
+	
+	misc:
+	{
+		backColor:
+		{
+			WHITE:			"Bílá",
+			BLACK:			"Èerná",
+			TRANSPARENT:	"Prùhledná",
+			CUSTOM:			"Vlastní"
+		},
+		
+		baseLayer:		"(Základní vrstva)",
+		description:	"Popis",
+		shortcut:		"Zkratka",
+		
+		fileSelection:
+		{
+			all: "Obrázkové soubory (*.jpg, *.jpeg, *.png, *.gif, *.bmp)",
+			jpg: "JPG (*.jpg, *.jpeg)",
+			png: "PNG (*.png)",
+			gif: "GIF (*.gif)",
+			bmp: "BMP (*.bmp)",
+			sie: "SIE (*.sie)"
+		}
+	},
+	
+	shortcuts:
+	[
+		{ name: "Vytvoøit nový soubor", value: "CTRL + N" 			},
+		{ name: "Otevøít soubor", 		value: "CTRL + O" 			},
+		{ name: "Uložit soubor", 		value: "CTRL + S" 			},
+		{ name: "Odvybrat vše", 		value: "CTRL + D" 			},
+		{ name: "Vybrat vše", 			value: "CTRL + A" 			},
+		{ name: "Pøejít doprostøed", 	value: "CTRL + Mezerník" 	},
+		{ name: "Krok zpìt", 			value: "CTRL + Z" 			},
+		{ name: "Krok vpøed", 			value: "CTRL + Y" 			},
+		{ name: "Pøiblížit", 			value: "ALT + Koleèko myši" },
+		{ name: "Nástroj pohybu", 		value: "Mezerník" 			}
+	]
+}

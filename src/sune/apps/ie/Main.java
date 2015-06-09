@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2015, Petr Cipra.
+ * Copyright (c) 2015, Sune.
  * All rights reserved.*/
 package sune.apps.ie;
 
@@ -9,8 +9,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application
 {
-	public static final String VERSION 	 = "1.1";
-	public static final String COPYRIGHT = "v" + VERSION + " © Petr Cipra (Sune)";
+	public static final String VERSION 	 = "1.1.0.1";
+	public static final String COPYRIGHT = "v" + VERSION + " © Sune";
 	
 	@Override
 	public void start(Stage stage) throws Exception

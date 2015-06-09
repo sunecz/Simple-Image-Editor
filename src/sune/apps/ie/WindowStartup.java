@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2015, Petr Cipra.
+ * Copyright (c) 2015, Sune.
  * All rights reserved.*/
 package sune.apps.ie;
 
@@ -243,6 +243,7 @@ public class WindowStartup extends Window
 				actionDone = true;
 				break;
 			case 1:
+				// Checks if there is a new version
 				if(Boolean.valueOf(Configuration.getStringProperty("checkUpdates")))
 				{
 					setStatus(Translation.getTranslation("windows.windowStartup.checkingNewVersion"));
@@ -256,8 +257,20 @@ public class WindowStartup extends Window
 						
 						try
 						{
-							double valLatest  = Double.parseDouble(latestVersion);
-							double valCurrent = Double.parseDouble(currentVersion);
+							/*Change little bit the way of checking the versions' values.
+							 *Allow more than one dot in the string using the string joining.
+							 *Ex. 1.1.0.1 is now also possible.*/
+							String _latestVersion  = "";
+							String _currentVersion = "";
+							
+							String[] splitLatestVer  = latestVersion.split("\\.");
+							String[] splitCurrentVer = currentVersion.split("\\.");
+							
+							for(String s : splitLatestVer)  _latestVersion  += s;
+							for(String s : splitCurrentVer) _currentVersion += s;
+							
+							double valLatest  = Integer.parseInt(_latestVersion);
+							double valCurrent = Integer.parseInt(_currentVersion);
 							
 							if(valLatest > valCurrent)
 							{

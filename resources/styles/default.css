@@ -1,0 +1,36 @@
+.scroll-pane#mainScrollPane > .viewport {
+	-fx-background-color: gray;
+	-fx-focus-color: transparent;
+}
+
+.scroll-pane:focused {
+	-fx-focus-color: transparent; 
+    -fx-background-insets: 0;
+}
+
+#label-version {
+	-fx-text-fill: rgba(0, 0, 0, 1);
+	-fx-font-weight: bold;
+}
+
+.progress-bar {
+	-fx-border-color: rgba(0, 0, 0, 0.3);
+	-fx-border-width: 1;
+}
+
+.progress-bar > .bar {
+	-fx-background-insets: 0;
+	-fx-background-radius: 0;
+	-fx-background-color: rgba(0, 178, 255, 1);
+}
+
+.progress-bar > .track {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.separator:horizontal .line {
+	-fx-background-insets: 2 2 2 2;
+	-fx-background-color: lightgray;
+	-fx-pref-height: 5;
+}

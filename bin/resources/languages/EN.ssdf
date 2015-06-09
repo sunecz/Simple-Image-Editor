@@ -1,0 +1,519 @@
+{
+	LANG_MARK:	"EN",
+	LANG_NAME:	"English",
+	LANG_DEFV:	"Unknown",
+	
+	APP_TITLE:		"Simple Image Editor v%{0}",
+	APP_TITLE_FILE:	"Simple Image Editor v%{0} [%{1}]",
+	
+	menus:
+	{
+		file:
+		{
+			MENU_TITLE:	"File",
+		
+			new:	"New",
+			open:	"Open",
+			save:	"Save",
+			saveAs:	"Save as",
+			exit:	"Exit"
+		},
+		
+		edits:
+		{
+			MENU_TITLE:	"Edit",
+			
+			backward:	"Step backward",
+			forward:	"Step forward",
+			config:		"Configuration"
+		},
+		
+		image:
+		{
+			MENU_TITLE:	"Image",
+			
+			resize:			"Resize image",
+			flipImageH:		"Filp horizontally",
+			flipImageV:		"Flip vertically",
+			flipImageLeft:	"Flip 90° to the left",
+			flipImageRight:	"Flip 90° to the right"
+		},
+		
+		filters:
+		{
+			MENU_TITLE: "Filters"
+		},
+		
+		selection:
+		{
+			MENU_TITLE:	"Selection",
+			
+			deselect:	"Deselect all",
+			selectAll:	"Select all",
+			invert:		"Invert selection"
+		}
+	},
+	
+	panels:
+	{
+		layers:
+		{
+			tooltips:
+			{
+				layerVisibility: "Layer visibility"
+			},
+			
+			menu:
+			{
+				removeLayer:		"Remove layer",
+				
+				addLayerMask:		"Add layer mask",
+				removeLayerMask:	"Remove layer mask"
+			}
+		}
+	},
+	
+	titles:
+	{
+		error:	"Error"
+	},
+	
+	pluginAPI:
+	{
+		cannotLoadPlugin:	"Cannot load plugin %{0}!"
+	},
+	
+	buttons:
+	{
+		addLayer: "Add new layer"
+	},
+	
+	messages:
+	{
+		startup:
+		{
+			welcomeMessage:	"Welcome to Simple Image Editor version %{0}!"
+		},
+	
+		canvas:
+		{
+			notImageLayer:	"This action cannot be done in non-image layer!"
+		},
+		
+		createNewFile:
+		{
+			emptySizes:		"Cannot create image with empty width or height!",
+			positiveSizes:	"The size of the image has to be positive and non-zero!"
+		},
+		
+		resizeImage:
+		{
+			emptySizes:		"Cannot create image with empty width or height!",
+			positiveSizes:	"The size of the image has to be positive and non-zero!"
+		},
+		
+		configuration:
+		{
+			languageChanged:
+			{
+				title:		"Warning",
+				headerText:	"Language changed",
+				message:	"Language has been changed. This change will take effect after the program is restarted!"
+			}
+		},
+		
+		largeImage:	"The largest possible size of image is %{0}x%{1}!"
+	},
+	
+	windows:
+	{
+		createNewFile:
+		{
+			title:	"New",
+		
+			labels:
+			{
+				width:		"Width:",
+				height:		"Height:",
+				backColor: 	"Background color:"
+			},
+			
+			buttons:
+			{
+				btnCreate:	"Create"
+			}
+		},
+		
+		windowCP:
+		{
+			title:	"Select color",
+			
+			labels:
+			{
+				red:		"Red:",
+				green:		"Green:",
+				blue:		"Blue:",
+				hue:		"Hue:",
+				saturation:	"Saturation:",
+				lightness:	"Lightness:"
+			},
+			
+			buttons:
+			{
+				btnSelect:	"Select"
+			}
+		},
+		
+		windowStartup:
+		{
+			loading:	"Loading...",
+			loadingApp:	"Loading application...",
+			
+			checkingNewVersion:	"Checking new version...",
+			confirmNewVersion:	"Do you want to download the latest version?\n(URL will be opened in your browser)",
+			title:				"New version",
+			headerText:			"New version is available!",
+			loadingPlugins:		"Loading plugins..."
+		},
+		
+		windowConfiguration:
+		{
+			title:	"Configuration",
+			
+			lblLanguage: 		"Language:",
+			chbCheckUpdates:	"Check new version at the application startup",
+			btnSave:			"Save"
+		},
+		
+		windowResize:
+		{
+			title:	"Resize",
+		
+			labels:
+			{
+				width:		"Width:",
+				height:		"Height:"
+			},
+			
+			buttons:
+			{
+				btnResize:	"Resize"
+			}
+		}
+	},
+	
+	plugins:
+	{
+		colorAdjustments:
+		{
+			contrast:
+			{
+				title:	"Contrast",
+			
+				window:
+				{
+					title:		"Contrast",
+					valueTitle:	"Contrast"
+				}
+			},
+			
+			brightness:
+			{
+				title:	"Brightness",
+			
+				window:
+				{
+					title:		"Brightness",
+					valueTitle:	"Brightness"
+				}
+			},
+			
+			invert:
+			{
+				title:	"Invert",
+			
+				window:
+				{
+					title:		"Invert"
+				}
+			},
+			
+			grayscale:
+			{
+				title:	"Grayscale",
+			
+				window:
+				{
+					title:		"Grayscale"
+				}
+			},
+			
+			hue:
+			{
+				title:	"Hue",
+			
+				window:
+				{
+					title:		"Hue",
+					valueTitle:	"Hue"
+				}
+			},
+			
+			gammaCorrection:
+			{
+				title:	"Gamma correction",
+				
+				window:
+				{
+					title:		"Gamma correction",
+					valueTitle: "Gamma"
+				}
+			},
+			
+			lightness:
+			{
+				title:	"Lightness",
+				
+				window:
+				{
+					title:		"Lightness",
+					valueTitle: "Lightness"
+				}
+			},
+			
+			transparency:
+			{
+				title:	"Transparency",
+				
+				window:
+				{
+					title:		"Transparency",
+					valueTitle: "Transparency"
+				}
+			},
+			
+			saturation:
+			{
+				title:	"Saturation",
+				
+				window:
+				{
+					title:		"Saturation",
+					valueTitle: "Saturation"
+				}
+			}
+		},
+		
+		filters:
+		{
+			gaussianBlur:
+			{
+				title: 	"Gaussian blur",
+				
+				window:
+				{
+					title:		"Gaussian blur",
+					valueTitle:	"Gaussian blur"
+				}
+			},
+			
+			boxBlur:
+			{
+				title: 	"Box blur",
+				
+				window:
+				{
+					title:		"Box blur",
+					valueTitle:	"Box blur"
+				}
+			},
+			
+			motionBlur:
+			{
+				title: 	"Motion blur",
+				
+				window:
+				{
+					title:		"Motion blur",
+					valueTitle:	"Motion blur",
+					lblAngle:	"Blur angle"
+				}
+			},
+			
+			sharpen:
+			{
+				title: 	"Sharpen",
+				
+				window:
+				{
+					title:		"Sharpen",
+					valueTitle:	"Sharpen"
+				}
+			},
+			
+			edgeDetection:
+			{
+				title:	"Edge detection",
+			
+				window:
+				{
+					title:	"Edge detection"
+				}
+			},
+			
+			smoothing:
+			{
+				title:	"Smoothing",
+			
+				window:
+				{
+					title:	"Smoothing"
+				}
+			},
+			
+			unsharpMask:
+			{
+				title:	"Unsharp mask",
+			
+				window:
+				{
+					title:	"Unsharp mask"
+				}
+			},
+			
+			pressUp:
+			{
+				title:	"Press up",
+			
+				window:
+				{
+					title:	"Press up"
+				}
+			},
+			
+			pressUpAndSmoothing:
+			{
+				title:	"Press up and smoothing",
+			
+				window:
+				{
+					title:	"Press up and smoothing"
+				}
+			},
+			
+			customFilter:
+			{
+				title:	"Custom filter",
+				
+				window:
+				{
+					title:				"Custom filter",
+					valueTitle:			"Iterations",
+					chbAlphaChannel:	"Alpha channel",
+					lblKernelSize:		"Kernel size:"
+				}
+			}
+		}
+	},
+	
+	general:
+	{
+		texts:
+		{
+			ok:			"OK",
+			preview:	"Preview",
+			
+			fileOpening:	"Opening %{0}...",
+			fileOpened:		"File %{0} opened.",
+			fileOpenError:	"Cannot open file %{0}!",
+			
+			fileSaving:		"Saving %{0}...",
+			fileSaved:		"File %{0} saved.",
+			fileSaveError:	"Cannot save file %{0}!",
+			
+			zoom:			"Zoom: %{0}",
+			layerBlendMode:	"Blend mode:"
+		}
+	},
+	
+	layerBlendModes:
+	{
+		NORMAL:			"Normal",
+		LINEAR_DODGE:	"Linear dodge",
+		MULTIPLY:		"Multiply",
+		SCREEN:			"Screen",
+		OVERLAY:		"Overlay",
+		DARKEN:			"Darken",
+		LIGHTEN:		"Lighten",
+		COLOR_DODGE:	"Color dodge",
+		COLOR_BURN:		"Color burn",
+		HARD_LIGHT:		"Hard light",
+		SOFT_LIGHT:		"Soft light",
+		DIFFERENCE:		"Difference",
+		EXCLUSION:		"Exclusion"
+	},
+	
+	tools:
+	{
+		TOOL_BRUSH:		"Brush",
+		TOOL_MOVE:		"Move",
+		TOOL_PENCIL:	"Pencil",
+		TOOL_RESIZE:	"Resize",
+		TOOL_ROTATE:	"Rotate",
+		TOOL_RUBBER:	"Rubber",
+		TOOL_SELECTION:	"Selection",
+		TOOL_VIEW_MOVE:	"View move",
+	
+		color:		"Color:",
+		size:		"Size:",
+		opacity:	"Opacity: %{0}",
+		
+		info:
+		{
+			brush:		"X: %{0}, Y: %{1} (%{2}, HEX: %{3})",
+			move:		"X: %{0}, Y: %{1}",
+			resize:		"X: %{0}, Y: %{1}, width: %{2}, height: %{3}",
+			rotate:		"Angle: %{0}° (degrees)",
+			selection:	"X: %{0}, Y: %{1}, width: %{2}, height: %{3}"
+		}
+	},
+	
+	misc:
+	{
+		backColor:
+		{
+			WHITE:			"White",
+			BLACK:			"Black",
+			TRANSPARENT:	"Transparent",
+			CUSTOM:			"Custom"
+		},
+		
+		baseLayer:		"(Base Layer)",
+		description:	"Description",
+		shortcut:		"Shortcut",
+		
+		fileSelection:
+		{
+			all: "Image files (*.jpg, *.jpeg, *.png, *.gif, *.bmp)",
+			jpg: "JPG (*.jpg, *.jpeg)",
+			png: "PNG (*.png)",
+			gif: "GIF (*.gif)",
+			bmp: "BMP (*.bmp)",
+			sie: "SIE (*.sie)"
+		}
+	},
+	
+	shortcuts:
+	[
+		{ name: "Create new file", 	value: "CTRL + N" 		},
+		{ name: "Open file", 		value: "CTRL + O" 		},
+		{ name: "Save file", 		value: "CTRL + S" 		},
+		{ name: "Deselect all", 	value: "CTRL + D" 		},
+		{ name: "Select all", 		value: "CTRL + A" 		},
+		{ name: "Scroll to center", value: "CTRL + SPACE" 	},
+		{ name: "Step backward", 	value: "CTRL + Z" 		},
+		{ name: "Step forward", 	value: "CTRL + Y" 		},
+		{ name: "Zoom", 			value: "ALT + Scroll" 	},
+		{ name: "View move tool", 	value: "SPACE" 			}
+	]
+}
